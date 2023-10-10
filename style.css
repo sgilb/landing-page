@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, arial, sans-serif;
 }
 
 a {
@@ -25,7 +25,7 @@ nav {
   flex: 1;
   color: #f9faf8;
   align-items: center;
-  padding: 0 10% 0 10%;
+  padding: 0 20%;
   margin-bottom: 16px;
 }
 
@@ -40,7 +40,7 @@ nav {
   justify-content: space-between;
   gap: 16px;
   padding: 0;
-  margin-left: auto;
+  margin-left: 32px;
 }
 
 .hero {
@@ -48,36 +48,48 @@ nav {
   padding: 0 10% 0 10%;
   gap: 16px;
   max-width: 100%;
+  justify-content: center;
+  padding: 100px 20%;
 }
 
-.hero,
-h1 {
+.hero h1 {
   font-size: 48px;
   font-weight: extra-bold;
   color: #f9faf8;
-  margin: 0 auto 0 0;
+  margin: 0 auto;
 }
 
 .secondary {
   color: #e5e7eb;
-  font-size: 18px;
+  opacity: 0.7;
 }
 
-.hero.block {
+.hero .block {
   display: flex;
   flex-direction: column;
+  text-align: left;
+  gap: 16px;
 }
 
 .hero img{
-  max-height: 200px;
-  flex-wrap: wrap;
+  object-fit:cover;
+  width: 100%;
+  max-height: 350px;
+
 }
 
-.signup,
-button {
+.signup {
   background-color: #3882f6;
   border: solid #3882f6;
   border-radius: 4px;
   font-weight: bold;
   padding: 4px 24px;
+  margin: 0;
+  width: 124px;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.secondary, p {
+  margin: 8px 0 8px 0;
 }
