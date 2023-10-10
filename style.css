@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-header {
+.header {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -54,9 +54,15 @@ nav {
 
 .hero h1 {
   font-size: 48px;
-  font-weight: extra-bold;
+  font-weight: 800;
   color: #f9faf8;
   margin: 0 auto;
+}
+
+.hero h1 span {
+  background: linear-gradient(to right, rgb(252, 194, 86) , rgb(255, 255, 93), rgb(98, 212, 98), rgb(159, 249, 249), rgb(91, 91, 240), rgb(242, 148, 242));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .secondary {
@@ -69,6 +75,7 @@ nav {
   flex-direction: column;
   text-align: left;
   gap: 16px;
+  padding-right: 16px;
 }
 
 .hero img{
@@ -92,4 +99,46 @@ nav {
 
 .secondary, p {
   margin: 8px 0 8px 0;
+}
+
+.favourites {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 16px 20%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  object-fit: cover;
+  width: 192px;
+  height: 192px;
+  margin: 16px;
+  border:solid 5px#3882f6;
+  border-radius: 12px;
+}
+
+.favourites h2 {
+  color: #1f2937;
+  font-weight: 800;
+  align-self: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container p{
+  color: #1f2937;
+  margin-bottom: 16px;
+  text-align: center;
+  width: 192px;
 }
