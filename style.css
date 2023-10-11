@@ -207,3 +207,16 @@ nav {
   font-size: 14px;
   min-width: 80px;
 }
+
+footer {
+  background-color: #1d2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .text {
+  color: #e5e7eb;
+  font-size: 14px;
+  padding: 16px;
+}
