@@ -26,6 +26,8 @@ nav {
   color: #f9faf8;
   align-items: center;
   padding: 0 20%;
+  text-align: center;
+
 }
 
 .nav.logo {
@@ -37,7 +39,7 @@ nav {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  gap: 32px;
   padding: 0;
   margin-left: 32px;
 }
